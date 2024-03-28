@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    width: 170px;
+    height: 170px;
+    background-color: blue;
+    
+
+}
+@media screen and (max-width:1025px){
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .card{
+        width: 280px;
+        height: 280px;
+        background-color: red;
+    }
+}
+@media screen and (max-width:800px){
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+  
+    }
+    .card{
+        width: 280px;
+        height: 280px;
+        background-color: black;
+    }
+}
+@media screen and (max-width:585px){
+    .cards{
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .card{
+        width: 280px;
+        height: 280px;
+        background-color: yellow;
+    }
+}
